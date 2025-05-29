@@ -1,0 +1,40 @@
+.services-page {
+  max-width: 850px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  color: #1e2a38;
+}
+
+.services-page h1 {
+  font-size: 2rem;
+  color: #d97706;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.services-page h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #d97706;
+}
+
+.services-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.services-page ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.services-page li {
+  margin-bottom: 0.5rem;
+}
+
+.note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}

@@ -1,0 +1,36 @@
+.site-footer {
+  background-color: #1e2a38; /* navy */
+  padding: 2rem 1rem;
+  border-top: none;
+  margin-top: 4rem;
+  text-align: center;
+  color: #f0f0f0; /* light gray text */
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+}
+
+/* Full-page flex layout */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content takes all space between header and footer */
+.content-wrap {
+  flex: 1;
+}
+
+/* Footer styling (already in place but you can clean it up here) */
+.site-footer {
+  background-color: #1e2a38;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.content-wrap {
+  flex: 1; /* allows main content to grow */
+}

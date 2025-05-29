@@ -1,0 +1,38 @@
+<section class="home-hero">
+<div class="hero-text">
+  <h1>Accurate All-Season Services LLC</h1>
+  <p>Your go-to team for home improvements,</p>
+  <p>repairs, and outdoor transformations — reliable, skilled,</p>
+  <p> and ready to help.</p>
+
+ 
+
+  <a routerLink="/contact">
+    <button>Contact Us</button>
+  </a>
+</div>
+
+  <div class="hero-image">
+    <img src="/companylogo.png" alt="Company Logo" />
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <h2>Our Previous Work</h2>
+
+  <div class="slideshow-container">
+    <img [src]="images[currentImageIndex]" alt="Previous Work" />
+
+    <button class="prev" (click)="prevSlide()">❮</button>
+    <button class="next" (click)="nextSlide()">❯</button>
+  </div>
+
+  <div class="dots">
+    <span 
+      *ngFor="let img of images; let i = index" 
+      class="dot" 
+      [class.active]="i === currentImageIndex"
+      (click)="goToSlide(i)">
+    </span>
+  </div>
+</section>

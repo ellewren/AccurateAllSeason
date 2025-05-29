@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff; /* white */
+  border-bottom: 1px solid #e0e0e0; /* optional subtle divider */
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.nav-center {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 100px;
+}
+
+.phone-number {
+  font-weight: bold;
+}
+
+.nav-center a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-center a:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-center a.active {
+  background-color: #d97706; /* burnt orange */
+  color: white;
+}
