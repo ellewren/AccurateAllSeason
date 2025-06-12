@@ -6,7 +6,8 @@
   font-size: 1.1rem;
   line-height: 1.75;
   background-color: #ffffff; 
-}
+  }
+
 
 
 .about-page h1 {
@@ -27,4 +28,35 @@
 
 .about-page p {
   margin-bottom: 1.2rem;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #d97706;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #b45309;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.2rem;
+  }
 }

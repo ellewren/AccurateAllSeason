@@ -16,6 +16,7 @@
   max-width: 900px;
   width: 100%;
   color: #1e2a38;
+  margin: 0 auto
 }
 
 .contact-grid {
@@ -80,4 +81,40 @@ button {
 
 button:hover {
   background-color: #b45309;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-content {
+    padding: 0 0.5rem;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-grid div h3 {
+    font-size: 1.1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    align-self: center;
+  }
 }

@@ -1,15 +1,12 @@
-<nav class="navbar">
-  <div class="nav-left">
-<img src="/logo-small.png" alt="Company Logo" class="logo" />
-    <span class="phone-number">(402) 431-2607</span>
+<nav class="mobile-navbar">
+  <div class="navbar-header">
+    <img src="companylogo.png" alt="Logo" class="logo" />
+    <button class="hamburger" (click)="toggleMenu()">☰</button>
   </div>
 
-  <div class="nav-center">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/services" routerLinkActive="active">Services</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  </div>
-
-  <div class="nav-right"></div> <!-- Optional: for spacing symmetry -->
-</nav>
+<ul class="nav-links" [class.open]="menuOpen">
+  <li><a routerLink="/home" routerLinkActive="active" (click)="toggleMenu()">Home</a></li>
+  <li><a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">About</a></li>
+  <li><a routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">Services</a></li>
+  <li><a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">Contact</a></li>
+</ul>

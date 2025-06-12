@@ -1,7 +1,6 @@
 .home-hero {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .hero-text,
@@ -16,30 +15,10 @@
 
 /* Left side: Text section */
 .hero-text {
-  flex: 1;
-  padding: 3rem;
-  background-color: #f4f1ec; /* warm white */
-  color: #1e2a38; /* navy */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: #f4f1ec;
+  color: #1e2a38;
   gap: 1.25rem;
-}
-
-/* Right side: Logo section */
-.hero-image {
-  flex: 1;
-  padding: 3rem;
-  background-color: #f4f1ec; /* muted beige */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image img {
-  max-width: 100%;
-  max-height: 300px;
-  object-fit: contain;
+  text-align: left;
 }
 
 .hero-text h1 {
@@ -69,14 +48,22 @@
   background-color: #b45309;
 }
 
+/* Right side: Logo section */
+.hero-image {
+  background-color: #f4f1ec;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-image img {
   max-width: 100%;
-  max-height: 1000px;
+  max-height: 300px;
   object-fit: contain;
 }
 
+/* Portfolio section */
 .portfolio-section {
-  background-color: #f8f8f8; /* muted beige */
+  background-color: #f8f8f8;
   padding: 3rem 1rem;
   text-align: center;
   margin-bottom: 4rem;
@@ -87,17 +74,18 @@
   margin-bottom: 2rem;
 }
 
+/* Slideshow */
 .slideshow-container {
   position: relative;
-  height: 500px;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .slideshow-container img {
   width: 100%;
   height: auto;
-  max-height: 500px; /* ⬅️ optional max height */
+  max-height: 500px;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -116,13 +104,8 @@
   border-radius: 50%;
 }
 
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
+.prev { left: 10px; }
+.next { right: 10px; }
 
 .dots {
   margin-top: 1rem;
@@ -141,4 +124,45 @@
 
 .dot.active {
   background-color: #007acc;
+}
+
+/* ✅ MOBILE STYLES */
+@media (max-width: 768px) {
+  .home-hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .slideshow-container {
+    height: auto;
+  }
+
+  .slideshow-container img {
+    max-height: 300px;
+  }
+
+  .prev, .next {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
 }

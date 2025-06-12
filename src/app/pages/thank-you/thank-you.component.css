@@ -1,0 +1,26 @@
+.thank-you-page {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #1e2a38;
+}
+
+.thank-you-page h1 {
+  color: #d97706;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.thank-you-page button {
+  padding: 0.75rem 1.5rem;
+  background-color: #d97706;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}

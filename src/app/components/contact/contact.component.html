@@ -20,15 +20,20 @@
   </div>
 </div>
 
-  <form class="contact-form">
-    <div class="form-row">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email address" required />
-      <input type="tel" placeholder="Phone number" />
-    </div>
-    <textarea placeholder="Message" required></textarea>
+<form
+  class="contact-form"
+  action="https://formspree.io/f/mkgbjprw"
+  method="POST"
+>
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="_replyto" placeholder="Email address" required />
+    <input type="tel" name="phone" placeholder="Phone number" />
+  </div>
+  <textarea name="message" placeholder="Message" required></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
+  <input type="hidden" name="_next" value="https://accurateall-seasonservices.com/thank-you" />
+  <button type="submit">Submit</button>
+</form>
   </div>
 </section>
